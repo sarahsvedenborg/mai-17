@@ -48,7 +48,7 @@ export default async function SongPage({ params }: Props) {
           {song.title}
         </h1>
         <p className="mt-2 text-base leading-relaxed text-[var(--page-muted)] sm:text-[1.0625rem]">
-          {song.credit}
+          {song.creditText}<br /> {song.creditMelody}
         </p>
 
         <div className="mt-10 space-y-10">

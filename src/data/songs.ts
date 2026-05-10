@@ -1,7 +1,8 @@
 export type Song = {
   slug: string;
   title: string;
-  credit: string;
+  creditText: string;
+  creditMelody: string;
   sourceUrl: string;
   sourceName: string;
   /** Tekstlinjer per strofe; linjeskift som i vanlig hymneforelegg der det hjelper sangen */
@@ -17,7 +18,8 @@ export const SONGS: Song[] = [
   {
     slug: "ja-vi-elsker",
     title: "Ja, vi elsker",
-    credit: "Tekst: Bjørnstjerne Bjørnson (1859, 1869). Melodi: Rikard Nordraak (ca. 1864). Nos 755.",
+    creditText: "Tekst: Bjørnstjerne Bjørnson",
+    creditMelody: "Melodi: Rikard Nordraak",
     sourceUrl:
       "https://www.kirken.no/nb-NO/fellesrad/Bergen/menigheter/Soreide-menighet/virksomhetsomrader/musikk-i-kirken/ukens%20salme/21%20ukens%20salme%20755/",
     sourceName: "kirken.no (Søreide menighet)",
@@ -48,8 +50,8 @@ export const SONGS: Song[] = [
   {
     slug: "norge-i-rodt-hvitt-og-blatt",
     title: "Norge i rødt, hvitt og blått",
-    credit:
-      "Tekst: Finn Bø, Bias Bernhoft og Arild Feldborg (1941). Melodi: Lars-Erik Larsson.",
+    creditText: "Tekst: Finn Bø, Bias Bernhoft og Arild Feldborg",
+    creditMelody: "Melodi: Lars-Erik Larsson",
     sourceUrl: "https://www.barnesanger.no/norge-i-rodt-hvitt-og-blatt.html",
     sourceName: "barnesanger.no",
     verses: [
