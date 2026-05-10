@@ -54,14 +54,13 @@ export const SONGS: Song[] = [
     sourceName: "barnesanger.no",
     verses: [
       [
+        "1.",
         "Hvorhen du går i li og fjell, en vinterdag, en sommerkveld",
         "med fjord og fossevell,",
         "fra eng og mo med furutrær fra havets bryn med fiskevær",
         "og til de hvite skjær,",
         "møter du landet i trefarvet drakt,",
         "svøpt i et gjenskinn av flaggets farveprakt.",
-      ],
-      [
         "Se, en hvitstammet bjerk oppi heien,",
         "rammer stripen med blåklokker inn",
         "mot den rødmalte stuen ved veien,",
@@ -72,6 +71,7 @@ export const SONGS: Song[] = [
         "det er Norge i rødt, hvitt og blått.",
       ],
       [
+        "2.",
         "En vårdag i en solskinnsstund",
         "på benken i Studenterlund",
         "der sitter han og hun,",
@@ -90,6 +90,7 @@ export const SONGS: Song[] = [
         "står vår ungdom i rødt, hvitt og blått.",
       ],
       [
+        "3.",
         "De kjempet både hun og han!",
         "Nå lyser seirens baunebrann,",
         "utover Norges land.",
@@ -102,8 +103,6 @@ export const SONGS: Song[] = [
         "skal det evig i fremtiden stå.",
         "Se, det glitrer på ny over byen,",
         "i det røde og hvite og blå.",
-      ],
-      [
         "La det runge fra gaten og torget,",
         "over landet som nordmenn har fått:",
         "Du er vårt, du er vårt, gamle Norge!",

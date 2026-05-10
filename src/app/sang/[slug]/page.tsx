@@ -76,9 +76,9 @@ export default async function SongPage({ params }: Props) {
             </section>
           ))}
         </div>
-
+        {/* 
         <footer className="mt-14 rounded-xl border border-[var(--page-border)] bg-[var(--source-box)] px-4 py-4">
-          <p className="text-[0.9375rem] leading-relaxed text-[var(--page-muted)]">
+            <p className="text-[0.9375rem] leading-relaxed text-[var(--page-muted)]">
             Tekst etter kilde:&nbsp;
             <a
               href={song.sourceUrl}
@@ -88,8 +88,8 @@ export default async function SongPage({ params }: Props) {
             >
               {song.sourceName}
             </a>
-          </p>
-        </footer>
+          </p> 
+        </footer> */}
       </article>
     </div>
   );
