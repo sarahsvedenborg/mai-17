@@ -13,8 +13,8 @@ export default function Home() {
             Sangtekster
           </h1>
           <p className="mt-3 text-[clamp(1rem,4vw,1.125rem)] leading-relaxed text-[var(--page-muted)]">
-            Trykk på en sang for stor, tydelig tekst du kan scrolle i mens dere
-            synger — også i sterkt lys.
+            Gratulerer med dagen til deg — og til Norge! Her er tekstene til to av
+            våre viktigste 17.&nbsp;mai-sanger. Ha en strålende feiring!
           </p>
         </header>
 
@@ -23,13 +23,10 @@ export default function Home() {
             <li key={song.slug}>
               <Link
                 href={`/sang/${song.slug}`}
-                className="tap-target flex min-h-[4.75rem] flex-col justify-center rounded-2xl border-2 border-[var(--card-border)] bg-[var(--card-bg)] px-5 py-4 shadow-sm transition-colors active:bg-[var(--tap-active)]"
+                className="tap-target flex min-h-[4.25rem] items-center rounded-2xl border-2 border-[var(--card-border)] bg-[var(--card-bg)] px-5 py-4 shadow-sm transition-colors active:bg-[var(--tap-active)]"
               >
                 <span className="text-[clamp(1.2rem,4.8vw,1.45rem)] font-semibold leading-snug">
                   {song.title}
-                </span>
-                <span className="mt-1 line-clamp-2 text-[0.9375rem] text-[var(--page-muted)]">
-                  {song.credit}
                 </span>
               </Link>
             </li>
