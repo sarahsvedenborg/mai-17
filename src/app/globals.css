@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  /* Høykontrast for utendørs / QR på mobil */
+  --page-bg: #f7f7f5;
+  --page-fg: #0f0f0f;
+  --page-muted: #3d3d3d;
+  --page-border: #d8d8d4;
+  --accent: #0f6d4a;
+  --card-bg: #ffffff;
+  --card-border: #c41e3a;
+  --tap-active: rgba(12, 0, 0, 0.06);
+  --source-box: #fffcf8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #0f1114;
+    --page-fg: #f4f4f1;
+    --page-muted: #b8bcb8;
+    --page-border: #2e3238;
+    --accent: #6dffb3;
+    --card-bg: #181b20;
+    --card-border: #e63946;
+    --tap-active: rgba(255, 255, 255, 0.08);
+    --source-box: #14171c;
+  }
+}
+
+@theme inline {
+  --color-background: var(--page-bg);
+  --color-foreground: var(--page-fg);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--page-fg);
+  font-family: var(--font-lyrics), ui-serif, Georgia, "Times New Roman", serif;
+}
+
+/* Lett å treffe på fingeren */
+.tap-target {
+  min-height: 44px;
+}
