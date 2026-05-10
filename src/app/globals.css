@@ -35,6 +35,8 @@
 html {
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  /* La innhold tilpasse seg ved zoom uten horisontal «min-content»-lekkasje */
+  overflow-x: clip;
 }
 
 body {

@@ -39,7 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="no" className={`${lyrics.variable} h-full scroll-smooth`}>
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full min-w-0">{children}</body>
     </html>
   );
 }
