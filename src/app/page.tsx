@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { SONGS } from "@/data/songs";
 
@@ -65,6 +66,27 @@ export default function Home() {
               </Link>
             </li>
           ))}
+
+          <li>
+            <Link
+              href="/qr"
+              className="tap-target group relative flex min-h-[max(11.5rem,42dvh)] w-full items-center justify-between gap-5 overflow-hidden rounded-3xl border-2 border-[var(--card-border)] bg-gradient-to-br from-white via-[#faf7f8] to-[#e8f2fc] px-6 py-7 shadow-md shadow-[#002664]/10 ring-1 ring-[#002664]/10 transition-[transform,box-shadow,background-color] duration-200 active:scale-[0.99] active:bg-[var(--tap-active)] hover:shadow-lg hover:shadow-[#BA0C2F]/15 md:min-h-[7rem] md:gap-6 md:px-7 md:py-5 dark:from-[#1a1f2a] dark:via-[#181c25] dark:to-[#0f2744]/90 dark:shadow-black/35 dark:ring-white/10 dark:hover:shadow-[#4c8ede]/25"
+            >
+              <span className="min-w-0 flex-1 text-[clamp(1.35rem,5.5vw,1.7rem)] font-semibold leading-snug">
+                QR-kode
+              </span>
+              <span className="inline-flex shrink-0 overflow-hidden rounded-md bg-white p-0.5 shadow-sm ring-1 ring-black/[0.07] dark:bg-zinc-100 dark:ring-white/12">
+                <Image
+                  src="/qr-17mai.png"
+                  alt=""
+                  width={231}
+                  height={231}
+                  className="h-12 w-12 rounded-sm object-contain opacity-95 transition-[opacity,transform] duration-200 group-hover:opacity-100 group-hover:scale-[1.03] sm:h-14 sm:w-14 dark:opacity-90 dark:group-hover:opacity-100"
+                  aria-hidden
+                />
+              </span>
+            </Link>
+          </li>
         </ul>
       </main>
     </div>
