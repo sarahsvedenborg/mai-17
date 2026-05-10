@@ -62,7 +62,7 @@ export default function Home() {
                 <span className="min-w-0 flex-1 text-[clamp(1.35rem,5.5vw,1.7rem)] font-semibold leading-snug">
                   {song.title}
                 </span>
-                <NorwegianFlagBadge className="h-12 w-auto shrink-0 opacity-[0.42] drop-shadow-sm transition-[opacity,transform] duration-200 group-hover:opacity-[0.62] group-hover:scale-[1.03] sm:h-14 dark:opacity-[0.38] dark:group-hover:opacity-[0.55]" />
+                <NorwegianFlagBadge className="h-12 w-auto shrink-0 opacity-100 drop-shadow-sm sm:h-14" />
               </Link>
             </li>
           ))}
@@ -81,7 +81,7 @@ export default function Home() {
                   alt=""
                   width={231}
                   height={231}
-                  className="h-12 w-12 rounded-sm object-contain opacity-95 transition-[opacity,transform] duration-200 group-hover:opacity-100 group-hover:scale-[1.03] sm:h-14 sm:w-14 dark:opacity-90 dark:group-hover:opacity-100"
+                  className="h-12 w-12 rounded-sm object-contain opacity-100 sm:h-14 sm:w-14 dark:opacity-100"
                   aria-hidden
                 />
               </span>

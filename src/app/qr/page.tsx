@@ -31,14 +31,14 @@ export default function QrPage() {
         </p>
 
         <div className="relative mt-8 flex justify-center sm:mt-10">
-          <div className="w-full max-w-[50vw] rounded-2xl border border-[var(--page-border)] bg-[var(--card-bg)] p-2 shadow-md sm:p-4 dark:bg-[var(--card-bg)]">
+          <div className="w-[70vw] max-w-full rounded-2xl border border-[var(--page-border)] bg-[var(--card-bg)] p-2 shadow-md sm:p-4 dark:bg-[var(--card-bg)]">
             <Image
               src="/qr-17mai.png"
               alt="QR-kode til sangtekstene"
               width={231}
               height={231}
               className="mx-auto h-auto w-full max-w-full"
-              sizes="50vw"
+              sizes="70vw"
               priority
             />
           </div>
